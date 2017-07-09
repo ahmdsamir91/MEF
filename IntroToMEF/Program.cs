@@ -10,7 +10,8 @@ namespace IntroToMEF
     {
         static void Main(string[] args)
         {
-            var host =new HostMEFInApplication();
+            //var host =new HostMEFInApplication();
+            var host = new UsingAssemblyCatalog();
             host.Run();
         }
     }

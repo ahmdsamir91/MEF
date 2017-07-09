@@ -4,15 +4,15 @@ using System.ComponentModel.Composition;
 namespace IntroToMEF
 {
     [Export(typeof(ILogger))]
-    internal class ConsoleLogger : ILogger
+    internal class AnotherConsoleLogger : ILogger
     {
-        public ConsoleLogger()
+        public AnotherConsoleLogger()
         {
         }
 
         public void Write(string Message)
         {
-            Console.WriteLine("From ConsoleLogger {0}",Message);
+            Console.WriteLine("From AnotherConsoleLogger {0}", Message);
         }
 
     }
